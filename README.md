@@ -1,4 +1,4 @@
-# Challenge ONE | Front End -  Portafolio
+<!-- # Challenge ONE | Front End -  Portafolio
 
 <p align="center" >
      <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169097543-d5ada41e-7db8-481d-9d89-cef4efdf7e05.png">
@@ -42,12 +42,10 @@ Incluye la etiqueta "**challengeoneportafolio2**" o "**challengeoneportafolio3**
 
 🔹 [Link del formulario](https://lp.alura.com.br/alura-latam-lp-entrega-de-challenge-one-esp)
 
-![screencapture-lp-alura-br-alura-latam-lp-entrega-de-challenge-one-esp-2022-09-21-16_38_31](https://user-images.githubusercontent.com/101413385/191595376-6e1408a6-859e-4fb5-855c-6571cec8f9c3.png)
-
-
 5) Accede a tu correo electrónico para conseguir tu Insignia Exclusiva para este Challenge 🏆
 6) ¡No olvides publicar un link o un vídeo de tu proyecto en Linkedin! 🏁
 
 <a href="https://www.linkedin.com/company/alura-latam/mycompany/" target="_blank">
 <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
+ -->
