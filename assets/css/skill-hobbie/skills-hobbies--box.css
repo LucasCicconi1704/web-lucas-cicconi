@@ -1,0 +1,22 @@
+.skills-hobbies__box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+    
+    width: 176px;
+    height: 174px;
+    
+    /* Preto/branco */
+    
+    background: #FFFFFF;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0
+}

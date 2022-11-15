@@ -1,0 +1,26 @@
+.about {
+    /* Frame 6 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 64px;
+gap: 10px;
+
+width: 100%;
+height: 399px;
+
+/* Azul/10% */
+
+background: #EAF2FD;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}

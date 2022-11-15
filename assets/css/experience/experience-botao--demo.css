@@ -1,0 +1,26 @@
+.experience__botao--demo {
+    /* Texto */
+
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+background-color: transparent;
+border: none;
+
+
+/* Preto/branco */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}

@@ -1,0 +1,24 @@
+.academic {
+
+
+display: flex;
+ flex-direction: column;
+align-items: center;
+padding: 3rem 1;
+gap: 32px;
+
+width: 100%;
+height: 666px;
+
+/* Azul/10% */
+
+background: #EAF2FD;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}

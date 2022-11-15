@@ -1,0 +1,14 @@
+.experience__img {
+/* Rectangle */
+width: 752px;
+height: 406px;
+
+border-radius: 0px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}

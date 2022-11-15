@@ -1,0 +1,11 @@
+.about__firma{
+width: 261px;
+height: 108px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}

@@ -1,0 +1,25 @@
+.title__container {
+   /* Topo */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 3px;
+gap: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+
+
+
+

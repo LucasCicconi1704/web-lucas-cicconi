@@ -1,0 +1,39 @@
+.title__div{
+        
+        /* padding: 3rem; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: 3rem;
+        /* gap: 208px; */
+        /* padding: 18px; */
+        
+        
+    
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+    
+}
+
+/* @media screen and (min-width: 0px) {
+
+    .title__div {
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .title__div {
+        flex-direction: row;
+    } 
+
+
+}*/

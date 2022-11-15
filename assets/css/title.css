@@ -1,0 +1,23 @@
+.title {
+/* Hero */
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items:inherit;
+
+padding: 1.5rem;
+/* gap: 88px; */
+
+width: 100%;
+height: 666px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
