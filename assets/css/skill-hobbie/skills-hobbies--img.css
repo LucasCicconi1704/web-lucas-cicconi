@@ -25,3 +25,7 @@
     order: 0;
     flex-grow: 0;
 }
+
+.size_img {
+    width: 42px;
+}
