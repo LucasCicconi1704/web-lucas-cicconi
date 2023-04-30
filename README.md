@@ -1,15 +1,15 @@
  # Challenge ONE | Front End -  Portafolio
+---
 
----
----
 ### ¡Bienvenido al Portafolio!
 
 #### Sigue mis logros, y las instrucciones del contenido 📚
 
-#### Visita la página del Desafío [¡Haciendo clic aquí!](https://lucascicconi1704.github.io/web-lucas-cicconi/) 📃
+#### Visita la página [¡Haciendo clic aquí!](https://lucascicconi1704.github.io/web-lucas-cicconi/) 📃
 
 <img src="https://github.com/LucasCicconi1704/web-lucas-cicconi/blob/main/assets/img/ScreenShotPortfolio.png" target="_blank"></a> 
 ---
+
 ## Detalles del proyecto:
 <p dir="auto">
      ¡Construcción de un portafolio basado en Figma para mostrar nuestros proyectos a los potenciales reclutadores que visitan nuestra página! 😁 
@@ -32,6 +32,7 @@
 ---
 
 ## FrameWork:
+
 <table>
 <tbody><tr>
   <th> HTML </th>
