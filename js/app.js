@@ -16,5 +16,4 @@ textareas.forEach((textarea) => {
     })
 });
 
-
 });
