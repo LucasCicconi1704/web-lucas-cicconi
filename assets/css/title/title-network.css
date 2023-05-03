@@ -10,8 +10,7 @@
     padding: 0px;
     gap: 32px;
     
-    width: 467px;
-    height: 24px;
+    margin-top: 6rem;
     
     
     /* Inside auto layout */
@@ -20,4 +19,32 @@
     order: 2;
     flex-grow: 0;
     
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .title__network{
+            /* Links */
+            
+            
+            /* Auto layout */
+            
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 32px;
+            
+            width: 467px;
+            height: 24px;
+            
+            
+            /* Inside auto layout */
+            
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+            
+            }
+
     }
