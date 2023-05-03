@@ -1,7 +1,28 @@
 .title__subsection {
-    /* Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam. */
-    
-    
+    width: 81%;
+    height: 135px;
+        
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+        
+    color: #464646;
+
+    }
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+.title__subsection {
+     
     width: 751px;
     height: 52px;
     
@@ -23,3 +44,4 @@
     align-self: stretch;
     flex-grow: 0;
     }
+}

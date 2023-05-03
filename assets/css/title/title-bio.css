@@ -1,15 +1,36 @@
 .title__bio {
-    /* Hola, mi nombre es Fulana de Tal y construyo paginas web */
+    font-family: 'Raleway';
+    color: #464646;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+    width: 81%;
     
+}
+
+
+@media screen and (min-width: 1024px) {
+.title__bio {
     
     width: 751px;
-    height: 122px;
+    height: 1px;
+    flex-direction: column;
+
+    margin-bottom: 6rem;
     
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 52px;
-    line-height: 61px;
+    font-size: 30px;
+    line-height: 42px;
+
+    margin-top: 6rem;
+
     
     /* Preto/100% */
     
@@ -23,3 +44,4 @@
     align-self: stretch;
     flex-grow: 0;
     }
+}
