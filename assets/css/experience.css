@@ -1,12 +1,25 @@
 .experience {
-   /* Experiencia area */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0px;
+   gap: 32px;
+   
+   width: 100%;
+   height: 2121px;
+}
+
+.experience__list {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 
 
-/* Experiencia area */
 
 
-/* Auto layout */
-
+@media screen and (min-width: 1024px) {
+.experience {
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -46,4 +59,5 @@ height: 1816px;
 flex: none;
 order: 1;
 flex-grow: 0;
+}
 }

@@ -1,4 +1,21 @@
 .experience__description {
+  
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    
+    width: 560px;
+    height: 51px;
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+.experience__description {
 /* Botoes */
 
 
@@ -19,4 +36,5 @@ height: 51px;
 flex: none;
 order: 2;
 flex-grow: 0;
+}
 }

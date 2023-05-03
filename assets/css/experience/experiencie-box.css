@@ -1,4 +1,17 @@
 .experiencie__box {
+
+    display: flex;
+    flex-direction: column;
+    padding: 21px 20px;
+    box-shadow: 0 2px 10px 2px #00000010;
+
+    margin-bottom: 2.1rem;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+.experiencie__box {
 /* Experiência */
 
 
@@ -19,4 +32,5 @@ height: 406px;
 flex: none;
 order: 0;
 flex-grow: 0;
+}
 }

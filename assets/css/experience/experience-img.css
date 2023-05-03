@@ -1,4 +1,18 @@
 .experience__img {
+    /* Rectangle */
+    width: 99%;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+
+@media screen and (min-width: 1024px) {
+.experience__img {
 /* Rectangle */
 width: 752px;
 height: 406px;
@@ -12,3 +26,4 @@ order: 1;
 align-self: stretch;
 flex-grow: 0;
 }
+    }
