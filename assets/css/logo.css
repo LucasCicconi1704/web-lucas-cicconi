@@ -1,28 +1,16 @@
 .logo {
-    
+    display: none;
+    padding: 0 5rem;
 }
 
 
-@media screen and (min-width: 0px) {
-
-    .logo {
-        display: none;
-        padding: 0 5rem;
-    }
-
-
-
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 
     .logo {
         display: block;
+        margin-bottom: 1rem;
     }
 
-    .logo__title {
-        flex-grow: 1;
-    }
 }
 
 
