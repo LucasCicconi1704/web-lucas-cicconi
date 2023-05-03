@@ -356,7 +356,7 @@ flex-grow: 0;
 
 .formcontato__img {
 /* unsplash:JYGnB9gTCls */
-
+display: flex;
 width: 464px;
 height: 593px;
 
@@ -435,14 +435,6 @@ order: 0;
 flex-grow: 0;
 }
 
-
-
-
-
-
-.formulario {
-    
-  }
   
   .form__label {
     font-size: 22px;
