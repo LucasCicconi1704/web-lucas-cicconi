@@ -1,432 +1,1363 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
 
-    <link rel="stylesheet" href="./assets/css/tudo.css">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <link rel="stylesheet" href="./assets/css/cabecera.css">
-    <link rel="stylesheet" href="./assets/css/logo.css">
-    <link rel="stylesheet" href="./assets/css/menu/menu-list.css">
-    <link rel="stylesheet" href="./assets/css/menu/menu-item.css">
-    <link rel="stylesheet" href="./assets/css/menu/menu-link.css">
-    <link rel="stylesheet" href="./assets/css/title.css">
-    <link rel="stylesheet" href="./assets/css/title/title-div.css">
-    <link rel="stylesheet" href="./assets/css/title/title-profile.css">
-    <link rel="stylesheet" href="./assets/css/title/title-container.css">
-    <link rel="stylesheet" href="./assets/css/title/title-bio.css">
-    <link rel="stylesheet" href="./assets/css/title/title-subsection.css">
-    <link rel="stylesheet" href="./assets/css/title/title-network.css">
-    <link rel="stylesheet" href="./assets/css/title/title-network-item.css">
-    <link rel="stylesheet" href="./assets/css/about.css">
-    <link rel="stylesheet" href="./assets/css/about/about-container.css">
-    <link rel="stylesheet" href="./assets/css/about/about-title.css">
-    <link rel="stylesheet" href="./assets/css/about/about-paragraph.css">
-    <link rel="stylesheet" href="./assets/css/about/about-firma.css">
-    <link rel="stylesheet" href="./assets/css/skills-hobbies.css">
-    <link rel="stylesheet" href="./assets/css/skill-hobbie/skills-hobbies--title.css">
-    <link rel="stylesheet" href="./assets/css/skill-hobbie/skills-hobbies--line.css">
-    <link rel="stylesheet" href="./assets/css/skill-hobbie/skills-hobbies--box.css">
-    <link rel="stylesheet" href="./assets/css/skill-hobbie/skills-hobbies--img.css">
-    <link rel="stylesheet" href="./assets/css/skill-hobbie/skills-hobbies--name.css">
-    <link rel="stylesheet" href="./assets/css/academic.css">
-    <link rel="stylesheet" href="./assets/css/academic/academic-title.css">
-    <link rel="stylesheet" href="./assets/css/academic/academic-courses.css">
-    <link rel="stylesheet" href="./assets/css/academic/academic-courses-box.css">
-    <link rel="stylesheet" href="./assets/css/academic/academic-courses-item-img.css">
-    <link rel="stylesheet" href="./assets/css/academic/academic-courses-item-title.css">
-    <link rel="stylesheet" href="./assets/css/academic/academic-courses-item-subtitle.css">
-    <link rel="stylesheet" href="./assets/css/experience.css">
-    <link rel="stylesheet" href="./assets/css/experience/experience-section-title.css">
-    <link rel="stylesheet" href="./assets/css/experience/experiencie-box.css">
-    <link rel="stylesheet" href="./assets/css/experience/experience-img.css">
-    <link rel="stylesheet" href="./assets/css/experience/experience-info.css">
-    <link rel="stylesheet" href="./assets/css/experience/experience-title.css">
-    <link rel="stylesheet" href="./assets/css/experience/experience-text.css">
-    <link rel="stylesheet" href="./assets/css/experience/experience-description.css">
-    <link rel="stylesheet" href="./assets/css/experience/experience-demo.css">
-    <link rel="stylesheet" href="./assets/css/experience/experience-botao--demo.css">
-    <link rel="stylesheet" href="./assets/css/experience/experience-repo.css">
-    <link rel="stylesheet" href="./assets/css/experience/experiencia-botao--repo.css">
-    <link rel="stylesheet" href="./assets/css/formcontato.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title>Lucas Cicconi</title>
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Lucas Portfolio Website</title>
 </head>
+
 <body>
-   <!--Sección del Header -->
-    <header class="cabecera">
-        <img class="logo" src="./assets/img/vector.png" alt="logo">
-        <h3 class="logo__title">Lucas Cicconi</h3>
-        
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
-                <li class="menu__item"><a class="menu__link" href="#hobbies">Hobbies</a></li>
-                <li class="menu__item"><a class="menu__link" href="#formacion">Formación</a></li>
-                <li class="menu__item"><a class="menu__link" href="#xp">Proyectos</a></li>
-                <li class="menu__item"><a class="menu__link activo" href="#contacto">lucascicconi@gmail.com</a></li>
-            </ul>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Lucas Cicconi</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase nav__icon"></i>Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+
+            </div>
+
+            <div class="nav__btns">
+
+                <!-- Theme change button -->
+
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"> </i>
+
+                </div>
+
         </nav>
     </header>
 
-    <!-- Sección del Title/Hero -->
-    <section class="title">
-        <div class="title__div">
-            <img class="title__profile" src="./assets/img/profile.png">
-            <div class="title__container">
-                <h2 class="title__bio">Hola, mi nombre es Lucas Daniel Cicconi; y manejo buenas practicas en varios lenguajes de programacion</h2>
-                <h3 class="title__subsection">Soy formado en la Universidad Catolica de La PLata y de la formacion Oracle ONE ademas de estar certificado como Data Analytics/Python Scientist en BigData. Regularmente subo mis logros y certificados en Linkedin </h3>
-                <ul class="title__network">
-                     <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a target="_blank" href="https://github.com/LucasCicconi1704">Github <img src="./assets/img/arrow.png"> </a></li>
-                    <li class="title__network__item"><a target="_blank" href="https://www.linkedin.com/in/lucas-cicconi/">Linkedin <img src="./assets/img/arrow.png"></a></li>
-                    <!-- <li class="title__network__item"><a target="_blank" href="">Instagram <img src="./assets/img/arrow.png"></a></li>-->
-                    <li class="title__network__item"><a target="_blank" href="https://drive.google.com/file/d/1eRdy7ZakjX_RnNSUAz4oSX0IWbwfYvnu/view?usp=share_link">Currículum <img src="./assets/img/arrow.png"></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Sección sobre mi -->
-    <section class="about" id="sobre-mi">
-        <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Soy un apasionado de la ingeniería (Sistemas/Datos/Desarrollo de Arquitecturas/DevOps).
-                Me considero una persona proactiva que disfruta mucho de aprender y adquirir conocimiento, así como también compartirlo con otros trabajando en equipo con metodologias agiles y de negocio.
-                Me encantan los nuevos desafíos y esforzarme para alcanzar nuevos objetivos 🚀</p>
-            <p class="about__paragraph">Mi tiempo como estudiante y emprendedor me enseño y brindo muchas herramientas para hoy poder desarrollarme en el mundo empresarial y se que hay muchas más por adquirir.
-            </p>
-            <!-- firma! -->
-            <img class="about__firma" src="./assets/img/signature.png">
-        </div>
-    </section>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/lucas-cicconi/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
 
-    <!-- Sección de Skills -->
-    <section class="skills-hobbies" id="skills">
-        <h3 class="skills-hobbies__title">Skills</h3>
-            <div class="skills-hobbies__line">
+                        <a href="https://github.com/LucasCicconi1704" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
 
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/perfil.png" />
+                            </g>
+                        </svg>
+                    </div>
 
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"><img class="size_img" src="./assets/img/java_logo.png"></li>
-                        <li class="skills-hobbies__name"> Java</li>
-                    </ul>
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Lucas</h1>
+                        <h3 class="home__subtitle">Data Analyst / Data Science</h3>
+                        <p class="home__description">
+                            High level experience in Data Science and development knowledge, producing quality work.</p>
+                        <a href="#contact" class="button button-flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"> <img class="size_img" src="./assets/img/js_icon.png" alt=""></li>
-                        <li class="skills-hobbies__name">Javascript</li>
-                    </ul>
-                </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"> <img class="size_img" src="./assets/img/sql_logo.png" alt=""></li>
-                        <li class="skills-hobbies__name">SQL</li>
-                    </ul>
-                </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"><img class="size_img" src="./assets/img/nodejs_icon.png" alt=""></li>
-                        <li class="skills-hobbies__name">Node JS</li>
-                    </ul>
-                </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"> <img  class="size_img" src="./assets/img/htlm.png" alt=""> </li>
-                        <li class="skills-hobbies__name">HTML 5</li>
-                    </ul>
-                </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"> <img class="size_img" src="./assets/img/css_icon.png" alt=""> </li>
-                        <li class="skills-hobbies__name">CSS</li>
-                    </ul>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <div class="skills-hobbies__line">
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"><img class="size_img" src="./assets/img/python_logo.png"></li>
-                        <li class="skills-hobbies__name"> Python </li>
-                    </ul>
-                </div>
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle"></span>
 
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"><img class="size_img" src="./assets/img/big-data.png"></li>
-                        <li class="skills-hobbies__name"> Big Data </li>
-                    </ul>
-                </div>
+            <div class="about__container container grid">
+                <img src="assets/img/about.jpg" alt="" class="about__img">
 
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"><img  class="size_img" src="./assets/img/business-agility.png"></li>
-                        <li class="skills-hobbies__name"> business-agility </li>
-                    </ul>
-                </div>
+                <div class="about__data">
+                    <p class="about__description">
+                          My job consists in helping and researchers to anlyse their datasets.
+                           I am skilleed for most data-science steps:
+                            data processing application of statistical methods,
+                             data visualization and results communication.
+                    </p>
 
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"><img class="size_img" src="./assets/img/docker_logo.png"></li>
-                        <li class="skills-hobbies__name"> Docker </li>
-                    </ul>
-                </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"><img  class="size_img" src="./assets/img/kanban_logo.png"></li>
-                        <li class="skills-hobbies__name"> Kanban </li>
-                    </ul>
-                </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"><img class="size_img" src="./assets/img/scrum_logo.png"></li>
-                        <li class="skills-hobbies__name"> Scrum </li>
-                    </ul>
-                </div>
-
-            </div>
-    </section>
-
-    <!-- Sección de Hobbies -->
-    <section class="skills-hobbies" id="hobbies">
-        <h3 class="skills-hobbies__title">Hobbies</h3>
-            <div class="skills-hobbies__line">
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"><img src="./assets/img/plane-solid.png" style="filter: invert(37%) sepia(92%) saturate(922%) hue-rotate(188deg) brightness(94%) contrast(90%);" width="27px" ></li>
-                        <li class="skills-hobbies__name">Tavel</li>
-                    </ul>
-                </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"> <img src="./assets/img/Beach-icon.png" style="filter: invert(37%) sepia(92%) saturate(922%) hue-rotate(188deg) brightness(94%) contrast(90%);" width="27px" alt=""></li>
-                        <li class="skills-hobbies__name">Beach</li>
-                    </ul>
-                </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"> <img src="./assets/img/person-swimming-solid.png" style="filter: invert(37%) sepia(92%) saturate(922%) hue-rotate(188deg) brightness(94%) contrast(90%);" width="27px" alt=""> <img src="./assets/img/dumbbell-solid (1).png" style="filter: invert(37%) sepia(92%) saturate(922%) hue-rotate(188deg) brightness(94%) contrast(90%);" width="27px" alt=""></li>
-                        <li class="skills-hobbies__name">Swim & Gym</li>
-                    </ul>
-                </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"><img src="./assets/img/tv_icon.png" alt=""></li>
-                        <li class="skills-hobbies__name">Job</li>
-                    </ul>
-                </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"> <img src="./assets/img/forkspoon_icon.png" alt=""> </li>
-                        <li class="skills-hobbies__name">cheff</li>
-                    </ul>
-                </div>
-
-                <div class="skills-hobbies__box">
-                    <ul>
-                        <li class="skills-hobbies__img"> <img src="./assets/img/camera_icon.png" alt=""> </li>
-                        <li class="skills-hobbies__name">Tomar fotos</li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-
-        <!-- Sección de Formación académica -->
-    <section class="academic" id="formacion">
-        <h2 class="academic__title" >Formación Académica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="./assets/img/UCALP-logo.png" width="252px"></li>
-                    <li class="academic__courses__item__title"><h4>Ing. Sistemas de Informacion</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2018 - UCALP</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="./assets/img/Oracle_University_Generic_Badge_1202.png" style="width: 222px;"></li>
-                    <li class="academic__courses__item__title"><h5>Formación Oracle Next Education</h5></li>
-                    <li class="academic__courses__item__subtitle"><p>Certified 2023</p></li>
-                    <li class="academic__courses__item__title"><h5>Python DataScience</h5></li>
-                    <li class="academic__courses__item__subtitle"><p>Certified 2023</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="./assets/img/DigitalHouse-logo.jpg" width="252px"></li>
-                    <li class="academic__courses__item__title"><h4>FullStack Web Developer</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Certified 2022</p></li>
-                    <li class="academic__courses__item__title"><h4>Data Analyst</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Certified 2023</p></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Experiencia Profesional/Proyectos-->
-    <section class="experience" id="xp">
-        <h2 class="experience__section__title" >Experiencia Professional</h2>
-
-        <div class="experience__list">
-
-            <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="./assets/img/DashBoard-UBER.png">
-                <div class="experience__info">
-                    <h2 class="experience__title">DashBoard-UBER</h2>
-                    <h3 class="experience__text">Desafio de Visualizaciones Estadisiticas UX/UI</h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <!-- <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span> -->
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">06+</span>
+                            <span class="about__info-name">Years of <br> experience</span>
                         </div>
-                </div>
-            </div>  
 
-
-            <div class="experiencie__box">
-                <div class="experience__info">
-                    <h2 class="experience__title">Ecommerce de Hamburguesas </h2>
-                    <h3 class="experience__text">Proyecto Propio con Mercado Pago</h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/LucasCicconi1704/MC-BURGUER"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <!-- <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span> -->
+                        <div>
+                            <span class="about__info-title">18+</span>
+                            <span class="about__info-name">Completed <br> projects</span>
                         </div>
-                </div>
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="./assets/img/TiendaDeBurguers.png">
-            </div>  
 
-
-            <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="./assets/img//ScreenShot-Doguito.png">
-                <div class="experience__info">
-                    <h2 class="experience__title">Lista de Tareas</h2>
-                    <h3 class="experience__text">Challenge Oracle </h3>
-                        <div class="experience__description">
-                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/LucasCicconi1704/CRUD-Clientes"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <!-- <span class="experience__demo"> <a href=""> <button class="experience__botao--demo">Ver demo</button></a></span> -->
+                        <div>
+                            <span class="about__info-title">03+</span>
+                            <span class="about__info-name">Companies <br> worked</span>
                         </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
+                            Download CV<i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>  
+            </div>
 
-           
-         
-            <div class="experiencie__box">
-                <div class="experience__info">
-                    <h2 class="experience__title">Red que reune requerimientos de empresas con freelancers </h2>
-                    <h3 class="experience__text">Proyecto Grupal Digital House</h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/0122CDFSNCN06LAED/grupo-05"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <!-- <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span> -->
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle"></span>
+
+            <div class="skills__container container grid">
+                <div>
+                    
+                    <!--==================== SKILLS 1 ====================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-chart-line skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Data Scientist & Analyst</h1>
+                                <span class="skills__subtitle">More than 3 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
+
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Excel/CSV/JSON</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="SQL">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SQL</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Tableau</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__html"></div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Power BI</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__css"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Matplotlib/Seaborn</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__js"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Data Cleaning</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Statistical Analysis</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__react"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Machine Learning</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__node"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Database Management</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Data Visualization</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Programming and Scripting</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Data Mining</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Web Scraping </h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SKILLS 2 ====================-->
+                    
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-brain skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title"> Soft Skills</h1>
+                                <span class="skills__subtitle">More than 9 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">TeamWork</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="SQL">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Scrum</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Kanban</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Domain Knowledge</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__html"></div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"> Critical Thinking</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__css"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Communication Skills</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__js"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Problem-Solving Skills </h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Attention to Detail </h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__react"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Ethical Considerations </h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__node"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Continuous Learning </h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Data Visualization</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Project Management</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Start Up </h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">leadership </h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+                                
+
+                            </div>
+                        </div>
+                    
+
+                    <!--==================== SKILLS 3 ====================-->
+                    
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Developer</h1>
+                                <span class="skills__subtitle">More than 6 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">GNU/BASH</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JAVA</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__html"></div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__css"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__js"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__react"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Node</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__node"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SQL</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">ORACLE CLOUD INFRASTRUCTURE</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+
+
+                                
+
+                            </div>
+                        </div>
+
+                        <!--==================== SKILLS 3 ====================-->
+                    
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-language skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Languages</h1>
+                                <span class="skills__subtitle">More than 6 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Español</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Português</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__firebase"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">English</h3>
+                                    <span class="skills__number"></span>
+
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__html"></div>
+                                </div>
+                            </div>
+                            
+                           
+                            </div>
+
+                            </div>
+                        </div>
+
+            </div>
+            </div>
+
+
+            </div>
+            </div>
+
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification__section">
+            <!-- <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span> -->
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
                 </div>
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="./assets/img/Hataraku-screen.png">
-            </div>  
 
+                <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div class="qualification__content qualification__active" data-content id="education">
+             <!--==================== QUALIFICATION 1 ====================--> 
+             <div class="qualification__data">
+                 <div>
+                     <h3 class="qualification__title">Computer Enginner</h3>
+                     <span class="qualification__subtitle">Argentina - University</span>
+                     <div class="qualification__calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2013 - 2017
+                     </div>
+                 </div>
 
-            <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="./assets/img/HotelAlura.png">
-                <div class="experience__info">
-                    <h2 class="experience__title">CheckIn Hotel</h2>
-                    <h3 class="experience__text">Challenge Oracle - JAVA </h3>
-                        <div class="experience__description">
-                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/LucasCicconi1704/hotel-java-alura"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <!-- <span class="experience__demo"> <a href=""> <button class="experience__botao--demo">Ver demo</button></a></span> -->
-                        </div>
+                 <div>
+                     <span class="qualification__rounder"></span>
+                     <span class="qualification__line"></span>
+                 </div>
+             </div>
+             
+             <!--==================== QUALIFICATION 2 ====================--> 
+             <div class="qualification__data">
+                <div></div>
+                <div>
+                   <span class="qualification__rounder"></span>
+                   <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                    <h3 class="qualification__title"> FullStack Developer</h3>
+                    <span class="qualification__subtitle">Argentina/Brazil - Institute</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2021 - 2022
+                    </div>
                 </div>
             </div> 
 
+            <!--==================== QUALIFICATION 3 ====================--> 
+            <div class="qualification__data">
+                <div>
+                    <h3 class="qualification__title">Oracle Next Education</h3>
+                    <span class="qualification__subtitle">ORACLE - University</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2021 - 2022
+                    </div>
+                </div>
+
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+            </div> 
+
+            <!--==================== QUALIFICATION 4 ====================--> 
+            <div class="qualification__data">
+                <div></div>
+                <div>
+                   <span class="qualification__rounder"></span>
+                   <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                    <h3 class="qualification__title">Data Analyst</h3>
+                    <span class="qualification__subtitle">Argentina/Brazil - Institute</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2022 - 2023
+                    </div>
+                </div>   
+            </div>
+
+            
+            <!--==================== QUALIFICATION 5 ====================--> 
+            <div class="qualification__data">
+                <div>
+                    <h3 class="qualification__title">Data Science</h3>
+                    <span class="qualification__subtitle">ORACLE - Institute</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2022 - 2023
+                    </div>
+                </div>
+
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+            </div> 
+
+            <!--==================== QUALIFICATION 6 ====================--> 
+            <div class="qualification__data">
+                <div></div>
+                <div>
+                   <span class="qualification__rounder"></span>
+                </div>
+
+                <div>
+                    <h3 class="qualification__title">ERP - Financials</h3>
+                    <span class="qualification__subtitle">Oracle - University</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2022 - 2023
+                    </div>
+                </div>   
+            </div>
+
+            </div>
+            
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+                <!--==================== QUALIFICATION 1 ====================--> 
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">Supplier Receptionist</h3>
+                        <span class="qualification__subtitle">CENCOSUD - Argentina</span>
+                        <div class="qualification__calendar">
+                           <i class="uil uil-calendar-alt"></i>
+                           2013 - 2016
+                        </div>
+                    </div>
+   
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+                
+                <!--==================== QUALIFICATION 2 ====================--> 
+                <div class="qualification__data">
+                   <div></div>
+                   <div>
+                      <span class="qualification__rounder"></span>
+                      <span class="qualification__line"></span>
+                   </div>
+   
+                   <div>
+                       <h3 class="qualification__title">Cashier/Stocker</h3>
+                       <span class="qualification__subtitle">WalMart - Argentina</span>
+                       <div class="qualification__calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          2017 - 2018
+                       </div>
+                   </div>
+               </div> 
+   
+               <!--==================== QUALIFICATION 3 ====================--> 
+               <div class="qualification__data">
+                   <div>
+                       <h3 class="qualification__title">Official Sales Agent</h3>
+                       <span class="qualification__subtitle">Movistar - Argentina</span>
+                       <div class="qualification__calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          2017 - 2019
+                       </div>
+                   </div>
+   
+                   <div>
+                       <span class="qualification__rounder"></span>
+                       <span class="qualification__line"></span>
+                   </div>
+               </div> 
+
+               <!--==================== QUALIFICATION 4 ====================--> 
+               <div class="qualification__data">
+                <div></div>
+                <div>
+                   <span class="qualification__rounder"></span>
+                   <span class="qualification__line"></span>
+                   
+                </div>
+
+                <div>
+                    <h3 class="qualification__title">CEO & Foundeer</h3>
+                    <span class="qualification__subtitle">Broker YA Seguro</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2021 - Present
+                </div>
+                </div>
+                
+                </div>
+
+                <!--==================== QUALIFICATION 3 ====================--> 
+               <div class="qualification__data">
+                <div>
+                    <h3 class="qualification__title">Data Scientist & Analyst</h3>
+                    <span class="qualification__subtitle">Freelance - Web</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2021 - Present
+                    </div>
+                </div>
+
+                <div>
+                    <span class="qualification__rounder"></span>
+                </div>
+          
+               </div> 
+             
+               
+            </div>
+        </section>
+      
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">Let me help make better your data.
+                 My experience can be used to clean, analyse, interpret and visualize your data.
+            </span>
+
+            <div class="services__container container grid">
+        <!--==================== SERVICES 1 ====================-->  
+        <div class="services__content">
+            <div>
+                <i class="uil uil-cloud-database-tree services__icon"></i>
+                <h3 class="services__title">Data <br> Management</h3>
+                <p>Data harvesting, cleaning and reshaping.</p>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+                View more
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Data <br> Management</h4>
+                    <i class="uil uil-times services__modal-close"></i>
+
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Harvest data from different sources like APIs, SQL databases or messy Excel spreadsheets.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Reformat and reshape data to make further analyses easier.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Clean datasets removing outliers and abberant data.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Create reproducible data preparation workflows.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Automatize the creation of data related reports
+                                .</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+        
+        <!--==================== SERVICES 2 ====================-->  
+        <div class="services__content">
+            <div>
+                <i class="uil uil-search-alt services__icon"></i>
+                <h3 class="services__title">Data <br> Mining</h3>
+                <p>Data exploration, application of statistical methods, reproducible data analysis.</p>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+                View more
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Data <br> Mining</h4>
+                    <i class="uil uil-times services__modal-close"></i>
+
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Exploratory analysis of a dataset.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Creation of clean and reproducible reports using Python.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Application of statistical methods on your dataset.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Creation of custom scripts for analysing your data automatically.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+
+        <!--==================== SERVICES 3 ====================-->  
+        <div class="services__content">
+            <div>
+                <i class="uil uil-chart services__icon"></i>
+                <h3 class="services__title">Dataviz </h3>
+                <p>Creation of static and interactive dataviz and dashboards, review of scientific figures.</p>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+                View more
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Dataviz</h4>
+                    <i class="uil uil-times services__modal-close"></i>
+
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Creation and review of graphs for scientific publication.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Development of data application using python and Google Colab.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Dashboard creation for real time data analysis.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Visualization of geospatial data.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+            </div>
+        </section>
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent works</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+        <!--==================== PORTFOLIO 1 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Modern Website</h3>
+                    <p class="portfolio__description">Website adaptable to all devices, 
+                        with ui components and animated interactions.</p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Brand design</h3>
+                    <p class="portfolio__description">Website adaptable to all devices, with 
+                        ui components and animated interactions.</p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Online store</h3>
+                    <p class="portfolio__description">Website adaptable to all devices, with 
+                        ui components and animated interactions.</p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+                </div>
+
+            <!-- add arrows-->
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            
+        
         </div>
-    </section>
 
-    <!-- Sección de Contacto -->
-    <section class="formcontato" id="contacto">
-            <div  class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="./assets/img/contact_image.png">
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <!-- <section class="project section">
+
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">You have a new project?</h2>
+                        <p class="project__description">Contact me now and get 30% discount on your project.</p>
+                        <a href="#contact" class="button button--flex button--white">Contact me</a>
+                    </div>
+                    <p></p>
+                    <p></p>
                 </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    
-                    <form action="https://formsubmit.co/lucascicconi@gmail.com" method="POST" class="formulario flex flex--column">
-                        <div class="input-container">
-                            <div class="input-container">
-                                <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
-                                <label class="input-label" for="name">Nombre</label>
-                                <span class="input-message-error">Este campo no puede esta vacio</span>
-                            </div>
+            </div>
+
+        </section> -->
+
+        <!--==================== TESTIMONIAL ====================-->
+        <!-- <section class="testimonial section">
+
+            <h2 class="section__title">Testimonials</h2>
+            <span class="section__subtitle">My client saying</span>
+
+            <div class="testimonial__container swiper-container">
+                <div class="swiper-wrapper"> -->
+                <!--==================== TESTIMONIAL 1 ====================-->
+                <!-- <div class="testimonial__content swiper-slide">
+                    <div class="testimonial__data">
+                        <div class="testimonial__header">
+                            <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
                             
-                            <div class="input-container">
-                                <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
-                                <label class="input-label" for="email">Email</label>
-                                <span class="input-message-error">Este campo no puede esta vacio</span>
+                            <div>
+                                <h3 class="testimonial__name">Sara Smith</h3>
+                                <span class="testimonial__client">Client</span>
                             </div>
+                        </div>
+                        <div>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                        </div>
+                    </div>
 
-                            <div class="input-container">
-                                <input name="asunto" id="asunto" class="input" type="text" placeholder="Asunto" required  maxlength="50" title="Hasta 50 caracteres" data-tipo="asunto">
-                                <label class="input-label" for="asunto">Asunto</label>
-                                <span class="input-message-error">Este campo no puede esta vacio</span>
+                    <p class="testimonial__description">I get a good impression, I carry out my project with all the 
+                        possible quality and attention and support 24 hours a day.
+                    </p>
+                </div> -->
+                <!--==================== TESTIMONIAL 2 ====================-->
+               <!--  <div class="testimonial__content swiper-slide">
+                    <div class="testimonial__data">
+                        <div class="testimonial__header">
+                            <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+                            
+                            <div>
+                                <h3 class="testimonial__name">John Doe</h3>
+                                <span class="testimonial__client">Client</span>
                             </div>
-                        
-                            <div class="textarea-container">
-                                <textarea class="textarea" rows="5" cols="40" id="myMessage" name="mensaje"  placeholder=""  required maxlength="300" title="Hasta 300 caracteres" data-tipo="MyMessaje"></textarea>
-                                <label class="textarea-label" for="asunto">Mensaje</label>
-                                <span class="textarea-mensagem-error">Este campo no puede esta vacio</span>
+                        </div>
+                        <div>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                        </div>
+                    </div>
 
+                    <p class="testimonial__description">I get a good impression, I carry out my project with all the 
+                        possible quality and attention and support 24 hours a day.
+                    </p>
+                </div> -->
+                <!--==================== TESTIMONIAL 3 ====================-->
+                <!-- <div class="testimonial__content swiper-slide">
+                    <div class="testimonial__data">
+                        <div class="testimonial__header">
+                            <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
+                            
+                            <div>
+                                <h3 class="testimonial__name">Lulu da Pomerânia</h3>
+                                <span class="testimonial__client">Client</span>
                             </div>
+                        </div>
+                        <div>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                        </div>
+                    </div>
 
+                    <p class="testimonial__description">I get a good impression, I carry out my project with all the 
+                        possible quality and attention and support 24 hours a day.</p>
+                </div>      
+                </div> -->
 
-                        <button type="submit" class="formcontato__botao"">Enviar mensaje</button>
-                    </form>
+                <!--Add pagination-->
+              <!--   <div class="swiper-pagination swiper-pagination-testimonial"></div>
+            </div>
+            </section> -->
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact me</h2>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call me</h3>
+                            <span class="contatc__subtitle">(+54) 9 11-2391-1524</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">E-mail</h3>
+                            <span class="contatc__subtitle">lucascicconi@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contatc__subtitle">Buenos Aires, Argentina</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-    </section>
 
-    <!-- Sección de Footer -->
-    <section class="footer">
-            <div class="footer__rodape">
-                <p>Desarrollado por Lucas Cicconi</p>
-                <p>2023</p>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Lucas</h1>
+                    <span class="footer__subtitle">Data Analyst / Data Science </span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://github.com/LucasCicconi1704" target="_blank" class="footer__social">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucas-cicconi/" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                </div>
             </div>
-    </section>
 
- <!-- Script del documento JavaScript -->
-<script src="./js/app.js" type="module"></script>
+            <p class="footer__copy">&#169; Lucas Daniel Cicconi. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
